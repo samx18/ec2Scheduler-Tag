@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     # all running EC2 instances.
     filters = [{
             'Name': 'tag:PowerSave',
-            'Values': ['nightly','Nightly','true','True']
+            'Values': ['true','True']
         },
         {
             'Name': 'instance-state-name', 
